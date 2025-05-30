@@ -53,6 +53,36 @@ const _nav = [
   to: '/prediccion',
   },
   {
+  component: CNavItem,
+  name: 'Predicción de Ventas 2',
+  to: '/predic',
+  },
+  {
+  component: CNavItem,
+  name: 'Ejemplos Regresión Lineal',
+  to: '/regre',
+  },
+  {
+  component: CNavItem,
+  name: 'Regresión Lineal',
+  to: '/regre2',
+  },
+  {
+  component: CNavItem,
+  name: 'Ejemplos Regresión Lineal',
+  to: '/regre3',
+  },
+  {
+  component: CNavItem,
+  name: 'Ejemplos Regresión Lineal',
+  to: '/regre4',
+  },
+  {
+  component: CNavItem,
+  name: 'Ejemplos Regresión Lineal',
+  to: '/regre5',
+  },
+  {
     component: CNavGroup,
     name: 'Base',
     to: '/base',

@@ -1,5 +1,11 @@
 import React from 'react'
 import MonthlyPrediction from './views/MonthlyPrediction';
+import SalesRegressionChart from './views/SalesRegressionChart';
+import VentasTotalesPorFecha from './views/VentasTotalesPorFecha';
+import VentasNikeAirMax from './views/VentasNikeAirMax';
+import CantidadVsIngreso from './views/CantidadVsIngreso';
+import TallaVsIngresoPumaRSX from './views/TallaVsIngresoPumaRSX';
+import VentasPromedioMensual from './views/ventaspromediomensual';
 
 const Dashboard = React.lazy(() => import('./views/dashboard/Dashboard'))
 const Colors = React.lazy(() => import('./views/theme/colors/Colors'))
@@ -99,6 +105,12 @@ const routes = [
   { path: '/notifications/toasts', name: 'Toasts', element: Toasts },
   { path: '/widgets', name: 'Widgets', element: Widgets },
   { path: '/prediccion', name: 'Predicción de Ventas', element: MonthlyPrediction },
+  { path: '/predic', name: 'Predicción de Ventas 2', element: SalesRegressionChart },
+  { path: '/regre', name: 'Ejemplos Regresión Lineal', element: VentasNikeAirMax },
+  { path: '/regre2', name: 'Regresión Lineal', element: CantidadVsIngreso },
+  { path: '/regre3', name: 'Ejemplos Regresión Lineal', element: TallaVsIngresoPumaRSX },
+  { path: '/regre4', name: 'Ejemplos Regresión Lineal', element: VentasTotalesPorFecha },
+  { path: '/regre5', name: 'Ejemplos Regresión Lineal', element: VentasPromedioMensual },
 ]
 
 export default routes

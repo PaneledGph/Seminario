@@ -2,6 +2,7 @@ import React from 'react';
 import classNames from 'classnames';
 import MonthlyPrediction from '../MonthlyPrediction'; // Asegúrate de que la ruta sea correcta
 import Top5Zapatillas from '../Top5Zapatillas'; // Asegúrate de que la ruta sea correcta
+import CantidadVsIngreso from '../CantidadVsIngreso';
 
 import {
   CAvatar,
@@ -162,6 +163,14 @@ const Dashboard = () => {
             <CCardHeader>Top 5 Zapatillas Más Vendidas</CCardHeader>
             <CCardBody>
               <Top5Zapatillas />
+            </CCardBody>
+          </CCard>
+        </CCol>
+        <CCol xs={12}>
+          <CCard className="mb-4">
+            <CCardHeader>Visualización de Cantidad Vendida vs Ingreso</CCardHeader>
+            <CCardBody>
+              <CantidadVsIngreso />
             </CCardBody>
           </CCard>
         </CCol>
